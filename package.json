@@ -1,0 +1,20 @@
+{
+  "name": "client",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start:prod": "build/index.js",
+    "start": " npm run build && node build/index.js"
+  },
+  "keywords": [],
+  "author": "belyaev.mob@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2",
+    "rimraf": "^3.0.2",
+    "prettier": "^2.5.0"
+  }
+}
